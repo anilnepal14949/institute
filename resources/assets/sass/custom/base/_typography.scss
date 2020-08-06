@@ -1,0 +1,88 @@
+body{
+  background-color: $body-bg-color;
+  width: 100%;
+  overflow: hidden;
+  font-family:$body-font;
+}
+header{
+  width: 100%;
+  padding: 0 15px;
+  font-family:$header-font;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  .row{
+    background: $main-blue-color;
+    border-radius: 10px;
+    padding: 10px 0;
+    >div{
+      span{
+        color: #fff;
+        font-size: 24px;
+      }
+    }
+    >div:first-child{
+      text-align: left;
+    }
+    >div:nth-child(2){
+      text-align: center;
+    }
+    >div:last-child{
+      .user_info{
+        margin-right: 50px;
+        font-size: 16px;
+        img.user_icon{
+          height: 30px;
+          margin-right: 10px;
+        }
+      }
+      text-align: right;
+    }
+  }
+  a {
+    color:#fff;
+    @extend %transition;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  h1{
+    margin: 0;
+  }
+
+}
+
+footer{
+  position:fixed;
+  bottom: 0;
+  padding: 0 15px;
+  z-index: 1;
+  color: #fff;
+  width: 100%;
+  margin-bottom: 5px;
+  .row{
+    background: $main-blue-color;
+    border-radius: 10px;
+    padding: 5px;
+    border: 5px solid $main-blue-color;
+    >div{
+      span{
+        font-size: 18px;
+      }
+    }
+    >div:first-child{
+      text-align: left;
+    }
+    >div:last-child{
+      text-align: right;
+    }
+  }
+  a{
+    font-family: $header-font;
+    font-size:16px;
+    @extend %transition;
+    :hover{
+      text-decoration: none;
+      color: #eee;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'young';
+    src: url('../fonts/young.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'rocko';
+    src: url('../fonts/RockoFLF.ttf') format('truetype');
+}
+$body-font: rocko;
+$header-font: young;
+
+%fontwithwhiteshadow{
+    font-family: $header-font;
+    font-size: 24px;
+    text-shadow: 1px 1px 3px rgba(255,255,255,1);
+}
+%fontwithblackshadow{
+    font-family: $header-font;
+    font-size: 24px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,1);
+}
+
+%option-font{
+    font-family: young;
+    font-size: 20px;
+    color: #222;
+}
+%form-title-font{
+    font-family: young;
+    font-size: 18px;
+}
+
+$tab-bg-color-1 :#f0ad4e;
+$tab-bg-color-2 :#d9534f;
+$tab-bg-color-3 :#5bc0de;
+$tab-bg-color-4 :#F08080;
+$tab-bg-color-5 :#5cb85c;
+$tab-colors-array : ($tab-bg-color-1,$tab-bg-color-2,$tab-bg-color-3,$tab-bg-color-4, $tab-bg-color-5);
+
+$main-blue-color :rgba(0,174,239,1);
+
+$main-blue-color-opacity-2: rgba(0,174,239,0.2);
+$main-blue-color-1: #BFE1EE;
+$main-blue-color-opacity-5: rgba(0,174,239,0.5);
+$main-blue-color-opacity-3: rgba(0,174,239,0.3);
+
+$hover-opacity-white:rgba(255,255,255,0.2);
+
+$body-bg-color: #eeeeee;
+
+$bg-option-color: #ffc;

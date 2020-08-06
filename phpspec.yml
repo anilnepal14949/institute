@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: ProIMAN
+        psr4_prefix: ProIMAN
+        src_path: app
